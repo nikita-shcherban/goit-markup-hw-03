@@ -90,7 +90,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 24px 0;
 }
 
 .upper-container {
@@ -120,19 +119,27 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  flex-basis: calc((100% - 72px) / 3);
+  flex-basis: calc((100% - 80px) / 3);
   font-weight: 500;
   margin-left: 76px;
-}
-
-address {
-  margin-left: auto;
 }
 
 .site-address {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc((100% - 40px) / 2);
   gap: 40px;
+}
+
+.site-nav .link,
+.site-address .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+address {
+  margin-left: auto;
 }
 
 .features-list,
